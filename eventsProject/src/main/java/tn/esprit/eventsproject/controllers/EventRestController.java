@@ -22,6 +22,7 @@ public class EventRestController {
     public Participant addParticipant(@RequestBody Participant participant){
         log.info("Add Participant");
         log.info("Add Participant Method");
+        log.info("Add .");
         return eventServices.addParticipant(participant);
     }
     @PostMapping("/addEvent/{id}")
