@@ -38,6 +38,7 @@ public class EventServicesImpl implements IEventServices{
             Set<Event> events = new HashSet<>();
             events.add(event);
             participant.setEvents(events);
+            log.info("events");
         }else {
             participant.getEvents().add(event);
         }
